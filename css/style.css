@@ -1,0 +1,46 @@
+.starter-template {
+	margin-top: 80px;
+}
+
+.container {
+	min-width: 990px;
+}
+
+.navbar {
+	min-width: 990px;
+}
+
+ul {
+	list-style: none;
+}
+
+.characters img{
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.charactersInfo {
+	display: inline-block;
+	width: 600px;
+	vertical-align: middle;
+}
+
+.Good, .Bad, .Neutral {
+	border: 6px solid;
+}
+
+.Good {
+	border-color: MediumSeaGreen;
+}
+
+.Bad {
+	border-color: Crimson;
+}
+
+.Neutral {
+	border-color: #999;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="appController">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Angular JS Lesson</title>
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.js" type="text/javascript"></script>
+	</head>
+	<body ng-controller="promiseController">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Angular Celebrities</a>
+			</div>
+		</div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Batman Characters</h1>
+        <ul>
+	        <li ng-repeat="character in characters" class="characters">
+	        	<img ng-src="img/{{character.firstname}}{{character.surname}}.jpg" alt="{{character.firstname}} {{character.surname}}" class="{{character.status}}"/><div class="charactersInfo">
+	        	<h2>{{character.firstname}} {{character.surname}}</h2>
+	        	<p>{{character.character}}</p>
+	        	</div>
+	        </li>
+        </ul>
+      </div>
+
+    </div>
+    <script src="controller/promiseController.js" type="text/javascript"></script>
+	</body>
+</html>
